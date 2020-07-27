@@ -6,28 +6,23 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         switch (num) {
             case 1:
-                sb.append(ch[numAt][0]);
-                break;
             case 2:
-                sb.append(ch[numAt][0]).append(ch[numAt][0]);
-                break;
             case 3:
-                sb.append(ch[numAt][0]).append(ch[numAt][0]).append(ch[numAt][0]);
+                for (int i = 0; i < num; i++) {
+                    sb.append(ch[numAt][0]);
+                }
                 break;
             case 4:
                 sb.append(ch[numAt][0]).append(ch[numAt][1]);
                 break;
             case 5:
-                sb.append(ch[numAt][1]);
-                break;
             case 6:
-                sb.append(ch[numAt][1]).append(ch[numAt][0]);
-                break;
             case 7:
-                sb.append(ch[numAt][1]).append(ch[numAt][0]).append(ch[numAt][0]);
-                break;
             case 8:
-                sb.append(ch[numAt][1]).append(ch[numAt][0]).append(ch[numAt][0]).append(ch[numAt][0]);
+                sb.append(ch[numAt][1]);
+                for (int i = 0; i < num - 5; i++) {
+                    sb.append(ch[numAt][0]);
+                }
                 break;
             case 9:
                 sb.append(ch[numAt][0]).append(ch[numAt + 1][0]);
