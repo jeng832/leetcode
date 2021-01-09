@@ -1,46 +1,40 @@
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 class Solution {
-    private Map<Integer, Set<List<Integer>>> makeSubSumMap(int[] nums) {
-        Map<Integer, Set<List<Integer>>> subSumMap = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                Integer key = nums[i] + nums[j];
-                List<Integer> indexList = new ArrayList<>();
-                indexList.add(i);
-                indexList.add(j);
-                indexList.sort(Comparator.comparingInt(e -> nums[e]));
-                if (subSumMap.containsKey(key)) {
-                    subSumMap.get(key).add(indexList);
-                } else {
-                    Set<List<Integer>> set = new HashSet<>();
-                    set.add(indexList);
-                    subSumMap.put(key, set);
-                }
-            }
-        }
-        return subSumMap;
-    }
 
     public List<List<Integer>> threeSum(int[] nums) {
-        Map<Integer, Set<List<Integer>>> subSumMap = makeSubSumMap(nums);
-        List<List<Integer>> ret = new ArrayList<>();
+        if (nums.length < 3) return Collections.EMPTY_LIST;
+        Set<List<Integer>> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
-            if (subSumMap.containsKey(num * -1)) {
-                Set<List<Integer>> subSum = subSumMap.get(num * -1);
-                for (List<Integer> elem : subSum) {
-                    if (elem.contains(i)) continue;
-                    List<Integer> list = new ArrayList<>(elem).stream().map(e -> nums[e]).collect(Collectors.toList());
-                    list.add(num);
-                    list.sort(Integer::compareTo);
-                    ret.add(list);
-                }
-            }
+            List<Integer> threeNums = new ArrayList<>();
+            threeNums.add(i);
+            dfs(nums, threeNums, set);
         }
-        return ret.stream().distinct().collect(Collectors.toList());
+        return new ArrayList<>(set);
+    }
+
+    private void dfs(int[] nums, List<Integer> threeNums, Set<List<Integer>> set) {
+        //System.out.println("threeNums: " + threeNums + ", set: " + set);
+        if (threeNums.size() == 3) {
+            int sum = 0;
+            for (Integer num : threeNums) {
+                sum += nums[num];
+            }
+            if (sum == 0) {
+                set.add(threeNums.stream().map(e -> nums[e]).sorted().collect(Collectors.toList()));
+            }
+            return;
+        }
+
+        int lastIdx = threeNums.size();
+        int last = threeNums.get(lastIdx - 1);
+        for (int i = last + 1; i < nums.length; i++) {
+            if (threeNums.contains(i)) continue;
+            List<Integer> sub = new ArrayList<>(threeNums);
+            sub.add(i);
+            dfs(nums, sub, set);
+        }
     }
 }
 
