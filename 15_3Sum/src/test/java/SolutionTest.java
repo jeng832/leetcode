@@ -42,7 +42,7 @@ public class SolutionTest {
 
     private void runTest(int[] input, List<List<Integer>> expected) {
         Solution sol = new Solution();
-        List<List<Integer>> output = sol.threeSum2(input);
+        List<List<Integer>> output = sol.threeSum3(input);
         Assert.assertEquals(expected, output);
     }
 }

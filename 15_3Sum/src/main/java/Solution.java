@@ -33,7 +33,7 @@ class Solution {
         int lastIdx = zeroNums.size();
         int last = zeroNums.get(lastIdx - 1);
         int subSum = 0;
-        for (var num : zeroNums) {
+        for (Integer num : zeroNums) {
             subSum += nums[num];
         }
         for (int i = last + 1; i < nums.length; i++) {
@@ -73,7 +73,7 @@ class Solution {
             if (checked.contains(nums[i] * -1)) continue;
             if (!map.containsKey(nums[i] * -1)) continue;
             List<List<Integer>> list = map.get(nums[i] * -1);
-            for (var e : list) {
+            for (List<Integer> e : list) {
                 if(e.contains(i) || e.size() == 3) continue;
                 e.add(i);
                 set.add(e.stream().map(elem -> nums[elem]).sorted().collect(Collectors.toList()));
@@ -81,6 +81,67 @@ class Solution {
             checked.add(nums[i] * -1);
         }
         return new ArrayList<>(set);
+    }
+
+    public List<List<Integer>> threeSum3(int[] nums) {
+        if (nums.length < 3) return Collections.EMPTY_LIST;
+        Arrays.sort(nums);
+        List<Integer> numList = IntStream.of(nums).boxed().collect(Collectors.toList());
+        Map<Integer, Set<List<IndexNum>>> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (!numList.contains((nums[i] + nums[j]) * -1)) continue;
+                List<IndexNum> three = new ArrayList<>();
+                if (nums[i] < nums[j]) {
+                    three.add(new IndexNum(i, nums[i]));
+                    three.add(new IndexNum(j, nums[j]));
+                } else {
+                    three.add(new IndexNum(j, nums[j]));
+                    three.add(new IndexNum(i, nums[i]));
+                }
+                if (map.getOrDefault(nums[i] + nums[j], Collections.EMPTY_SET).contains(three)) continue;
+
+                if (map.containsKey(nums[i] + nums[j])) {
+                    map.get(nums[i] + nums[j]).add(three);
+                } else {
+                    Set<List<IndexNum>> set = new HashSet<>();
+                    set.add(three);
+                    map.put(nums[i] + nums[j], set);
+                }
+
+            }
+        }
+
+        Set<Integer> checked = new HashSet<>();
+        Set<List<IndexNum>> answers = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (checked.contains(nums[i] * -1)) continue;
+            if (!map.containsKey(nums[i] * -1)) continue;
+            Set<List<IndexNum>> set = map.get(nums[i] * -1);
+            for (List<IndexNum> e : set) {
+                int finalI = i;
+                if (e.stream().anyMatch(indexNum -> indexNum.index == finalI)) continue;
+                if(e.size() == 3) continue;
+                e.add(new IndexNum(i, nums[i]));
+                answers.add(e.stream().sorted(Comparator.comparingInt(a -> a.number)).collect(Collectors.toList()));
+            }
+            checked.add(nums[i] * -1);
+        }
+
+        return new ArrayList<>(answers.stream()
+                .map(indexNums -> Arrays.asList(indexNums.get(0).number, indexNums.get(1).number, indexNums.get(2).number))
+                .collect(Collectors.toSet()));
+
+    }
+
+    class IndexNum {
+        int index;
+        int number;
+        IndexNum(int index, int number) {
+            this.index = index;
+            this.number = number;
+        }
     }
 }
 
