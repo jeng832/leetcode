@@ -1,0 +1,2 @@
+- Runtime: **5 ms**, faster than **30.52%** of Java online submissions for Letter Combinations of a Phone Number.
+- Memory Usage: **39.2 MB**, less than **35.37%** of Java online submissions for Letter Combinations of a Phone Number.
