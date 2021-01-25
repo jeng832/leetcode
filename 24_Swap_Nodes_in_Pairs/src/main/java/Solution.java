@@ -17,8 +17,8 @@ class Solution {
         ListNode before = head.next;
         while (current != null && current.next != null) {
             before.next = swapPair(current, current.next);
-            current = (current.next != null) ? current.next.next : null;
-            before = (current != null) ? current.next : null;
+            before = current;
+            current = current.next;
         }
         if (current != null) before.next = current;
         return head;

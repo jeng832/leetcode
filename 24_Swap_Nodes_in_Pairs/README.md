@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for Swap Nodes in Pairs.
+- Memory Usage: **36.9 MB**, less than **12.31%** of Java online submissions for Swap Nodes in Pairs.
