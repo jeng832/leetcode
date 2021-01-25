@@ -1,0 +1,2 @@
+- Runtime: **194 ms**, faster than **10.74%** of Java online submissions for Merge k Sorted Lists.
+- Memory Usage: **41.8 MB**, less than **13.44%** of Java online submissions for Merge k Sorted Lists.
