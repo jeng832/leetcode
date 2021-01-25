@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **14.72%** of Java online submissions for Remove Nth Node From End of List.
+- Memory Usage: **36.7 MB**, less than **89.06%** of Java online submissions for Remove Nth Node From End of List.
