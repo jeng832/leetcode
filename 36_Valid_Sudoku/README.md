@@ -1,0 +1,2 @@
+- Runtime: **5 ms**, faster than **35.12%** of Java online submissions for Valid Sudoku.
+- Memory Usage: **43.1 MB**, less than **10.67%** of Java online submissions for Valid Sudoku.
