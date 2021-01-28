@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **84.52%** of Java online submissions for Trapping Rain Water.
+- Memory Usage: **38.2 MB**, less than **96.48%** of Java online submissions for Trapping Rain Water.
