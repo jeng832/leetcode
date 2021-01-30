@@ -1,0 +1,2 @@
+- Runtime: **2 ms**, faster than **74.96%** of Java online submissions for Count and Say.
+- Memory Usage: **36.5 MB**, less than **91.24%** of Java online submissions for Count and Say.
