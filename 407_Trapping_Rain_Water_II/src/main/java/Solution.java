@@ -44,15 +44,15 @@ class Solution {
                 down[j] = max;
             }
 
-            for (int j = 0; j < heightMap.length; j++) {
+            for (int j = 1; j < heightMap.length - 1; j++) {
                 water[j][i] = Math.min(Math.min(up[j], down[j]), water[j][i]);
             }
             
         }
 
-        for (int i = 0; i < water.length; i++) {
-            for (int j = 0; j < water[0].length; j++) {
-                sum += water[i][j];
+        for (int i = 1; i < water.length - 1; i++) {
+            for (int j = 1; j < water[0].length - 1; j++) {
+                sum += (water[i][j] - heightMap[i][j]);
             }
         }
         return sum;

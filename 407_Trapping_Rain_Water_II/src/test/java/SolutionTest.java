@@ -27,4 +27,30 @@ public class SolutionTest {
         Assert.assertEquals(0, actual);
     }
 
+    @Test
+    public void testSimple3() {
+        Solution sol = new Solution();
+        int[][] heightMap = {
+                {12,13,1,12},
+                {13,4,13,12},
+                {13,8,10,12},
+                {12,13,12,12},
+                {13,13,13,13}
+        };
+        int actual = sol.trapRainWater(heightMap);
+        Assert.assertEquals(14, actual);
+    }
+
+    @Test
+    public void testSimple() {
+        Solution sol = new Solution();
+        int[][] heightMap = {
+                {3, 3, 3, 3},
+                {3, 2, 1, 3},
+                {3, 3, 3, 3}
+        };
+        int actual = sol.trapRainWater(heightMap);
+        Assert.assertEquals(3, actual);
+    }
+
 }
