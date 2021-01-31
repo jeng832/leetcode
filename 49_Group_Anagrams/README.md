@@ -1,0 +1,2 @@
+- Runtime: **26 ms**, faster than **13.91%** of Java online submissions for Group Anagrams.
+- Memory Usage: **42.7 MB**, less than **41.30%** of Java online submissions for Group Anagrams.
