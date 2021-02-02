@@ -1,0 +1,2 @@
+- Runtime: **4 ms**, faster than **12.68%** of Java online submissions for Permutations.
+- Memory Usage: **41.5 MB**, less than **7.83%** of Java online submissions for Permutations.
