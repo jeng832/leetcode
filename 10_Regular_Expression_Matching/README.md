@@ -1,0 +1,2 @@
+- Runtime: **68 ms**, faster than **11.96%** of Java online submissions for Regular Expression Matching.
+- Memory Usage: **40.2 MB**, less than **5.97%** of Java online submissions for Regular Expression Matching.
