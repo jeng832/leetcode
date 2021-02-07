@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for Spiral Matrix II.
+- Memory Usage: **37.2 MB**, less than **58.40%** of Java online submissions for Spiral Matrix II.
