@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **98.60%** of Java online submissions for Best Time to Buy and Sell Stock.
+- Memory Usage: **52 MB**, less than **37.26%** of Java online submissions for Best Time to Buy and Sell Stock.
