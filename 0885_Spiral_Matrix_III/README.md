@@ -1,0 +1,2 @@
+- Runtime: **3 ms**, faster than **87.34%** of Java online submissions for Spiral Matrix III.
+- Memory Usage: **40.3 MB**, less than **29.80%** of Java online submissions for Spiral Matrix III.
