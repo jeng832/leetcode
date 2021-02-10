@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **52.21%** of Java online submissions for Length of Last Word.
+- Memory Usage: **37.7 MB**, less than **35.04%** of Java online submissions for Length of Last Word.
