@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for Same Tree.
+- Memory Usage: **38 MB**, less than **16.33%** of Java online submissions for Same Tree.
