@@ -1,0 +1,2 @@
+- Runtime: **6 ms**, faster than **31.81%** of Java online submissions for Jump Game III.
+- Memory Usage: **47 MB**, less than **75.65%** of Java online submissions for Jump Game III.
