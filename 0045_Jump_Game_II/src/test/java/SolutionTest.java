@@ -41,6 +41,6 @@ public class SolutionTest {
         }
         Solution sol = new Solution();
         int actual = sol.jump(input);
-        Assert.assertEquals(1, actual);
+        Assert.assertEquals(2, actual);
     }
 }

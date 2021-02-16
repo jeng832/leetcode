@@ -1,0 +1,2 @@
+- Runtime: **556 ms**, faster than **5.10%** of Java online submissions for Jump Game II.
+- Memory Usage: **41.3 MB**, less than **31.49%** of Java online submissions for Jump Game II.
