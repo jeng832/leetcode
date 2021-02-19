@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **49.74%** of Java online submissions for Two Sum II - Input array is sorted.
+- Memory Usage: **38.8 MB**, less than **94.13%** of Java online submissions for Two Sum II - Input array is sorted.
