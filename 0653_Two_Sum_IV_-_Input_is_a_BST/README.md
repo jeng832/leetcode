@@ -1,0 +1,2 @@
+- Runtime: **38 ms**, faster than **5.26%** of Java online submissions for Two Sum IV - Input is a BST.
+- Memory Usage: **52.6 MB**, less than **5.23%** of Java online submissions for Two Sum IV - Input is a BST.
