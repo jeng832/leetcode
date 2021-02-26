@@ -30,6 +30,6 @@ public class SolutionTest {
     public void testBig() {
         Solution sol = new Solution();
         int actual = sol.uniquePaths(23, 12);
-        Assert.assertEquals(6, actual);
+        Assert.assertEquals(193536720, actual);
     }
 }
