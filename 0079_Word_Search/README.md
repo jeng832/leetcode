@@ -1,0 +1,2 @@
+- Runtime: **233 ms**, faster than **5.05%** of Java online submissions for Word Search.
+- Memory Usage: **114.6 MB**, less than **5.17%** of Java online submissions for Word Search.
