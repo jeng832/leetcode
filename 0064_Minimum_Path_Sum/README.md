@@ -1,0 +1,2 @@
+- Runtime: **2 ms**, faster than **83.71%** of Java online submissions for Minimum Path Sum.
+- Memory Usage: **41.5 MB**, less than **80.01%** of Java online submissions for Minimum Path Sum.
