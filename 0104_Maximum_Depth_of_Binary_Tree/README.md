@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for Maximum Depth of Binary Tree.
+- Memory Usage: **38.8 MB**, less than **85.92%** of Java online submissions for Maximum Depth of Binary Tree.
