@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for N-th Tribonacci Number.
+- Memory Usage: **35.5 MB**, less than **92.33%** of Java online submissions for N-th Tribonacci Number.
