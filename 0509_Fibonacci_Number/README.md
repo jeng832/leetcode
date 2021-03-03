@@ -1,0 +1,2 @@
+- Runtime: **0 ms**, faster than **100.00%** of Java online submissions for Fibonacci Number.
+- Memory Usage: **35.7 MB**, less than **71.43%** of Java online submissions for Fibonacci Number.
