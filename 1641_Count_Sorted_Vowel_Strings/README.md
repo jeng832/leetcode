@@ -1,0 +1,2 @@
+- Runtime: **1151 ms**, faster than **5.02%** of Java online submissions for Count Sorted Vowel Strings.
+- Memory Usage: **101.5 MB**, less than **5.22%** of Java online submissions for Count Sorted Vowel Strings.
