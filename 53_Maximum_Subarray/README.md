@@ -1,0 +1,2 @@
+- Runtime: **1 ms**, faster than **53.34%** of Java online submissions for Maximum Subarray.
+- Memory Usage: **38.8 MB**, less than **71.63%** of Java online submissions for Maximum Subarray.

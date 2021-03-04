@@ -28,7 +28,7 @@ public class SolutionTest {
             input[i] = Integer.parseInt(strSplit[i]);
         }
         int actual = sol.maxSubArray(input);
-        Assert.assertEquals(6, actual);
+        Assert.assertEquals(11081, actual);
     }
 
     @Test
